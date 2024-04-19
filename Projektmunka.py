@@ -27,6 +27,7 @@ def iras_fajl(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
         Indulasok_1.append(m[int(1)].strip("\n"))
         Indulasok_2.append(m[int(2)].strip("\n"))
     print(Vonat_nevek)
+    Menetrend_iro.close()
 
 def befajl_1(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
     Menetrend_beolvaso = open("Be1.txt", "r", encoding="UTF-8")
@@ -36,7 +37,7 @@ def befajl_1(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
         Indulasok_1.append(m[int(1)].strip("\n"))
         Indulasok_2.append(m[int(2)].strip("\n"))
         Orszag_berlet.append(m[int(3)].strip("\n"))
-    # print(Vonat_nevek)
+    print(Vonat_nevek)
     # print(Indulasok)
     Menetrend_beolvaso.close()
 
@@ -85,10 +86,18 @@ def megszamolas(Orszag_berlet):
     db = 0
     n = len(Orszag_berlet)
     for i in range(n):
-        if Orszag_berlet[i] == "Utazható Országbérlettel":
+        if Orszag_berlet[i] == " Utazható Országbérlettel":
             db += 1
     return db
 
+def rendez(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
+    for i in range(len(Vonat_nevek)-1):
+        for j in range(len(Vonat_nevek)-i-1):
+            if Indulasok_1[j] > Indulasok_1[j+1]:
+                Vonat_nevek[j], Indulasok_1[j], Indulasok_2[j], Orszag_berlet[j] = Vonat_nevek[j+1], Indulasok_1[j+1], Indulasok_2[j+1], Orszag_berlet[j+1]
+            elif Indulasok_2[j] > Indulasok_2[j+1]:
+                Vonat_nevek[j], Indulasok_1[j], Indulasok_2[j], Orszag_berlet[j] = Vonat_nevek[j+1], Indulasok_1[j+1], Indulasok_2[j+1], Orszag_berlet[j+1]
+    print(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
 
 
 def main():
@@ -100,6 +109,7 @@ def main():
     gyakorisag_mero(Vonat_nevek)
     print(megszamolas(Orszag_berlet))
     listazas(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
+    rendez(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
 
 
 main()
