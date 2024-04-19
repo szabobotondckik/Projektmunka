@@ -90,6 +90,9 @@ def megszamolas(Orszag_berlet):
             db += 1
     return db
 
+def kivalogatas(Orszag_berlet):
+    ...
+
 def rendez(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
     for i in range(len(Vonat_nevek)-1):
         for j in range(len(Vonat_nevek)-i-1):
@@ -107,7 +110,7 @@ def main():
     Orszag_berlet = []
     feladat_eldontes(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
     gyakorisag_mero(Vonat_nevek)
-    print(megszamolas(Orszag_berlet))
+    print(f"Országbérlettel utazható vonatok száma: {megszamolas(Orszag_berlet)}")
     listazas(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
     rendez(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
 
