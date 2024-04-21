@@ -102,7 +102,8 @@ def gyakorisag_mero(Vonat_nevek):
     for i in range(1, len(Vonat_nevek)):
         if Vonat_nevek[i] > Vonat_nevek[maxi]:
             maxi = i
-            print(f"A leggyakoribb vonat: {Vonat_nevek[i]}")
+            maxi += 1
+    print(f"A leggyakoribb vonat: {Vonat_nevek[i]}")
 
 def megszamolas(Orszag_berlet):
     db = 0
