@@ -58,4 +58,3 @@ Z50 - 18 - 48 - Nem Utazható országbérlettel
 Napfény - 19 - 13 - Utazható Országbérlettel
 Cívis - 19 - 38 - Utazható Országbérlettel
 Tokaj - 19 - 43 - Nem Utazható országbérlettel
-Z50 - 19 - 48 - Utazható Országbérlettel
