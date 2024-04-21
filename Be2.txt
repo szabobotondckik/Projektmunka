@@ -22,6 +22,6 @@ Orient Express - 22 - 35 - Nem Utazható országbérlettel
 Thello - 08 - 00 - Nem Utazható országbérlettel   
 Railjet - 10 - 35 - Utazható országbérlettel  
 Shatabdi Express - 13 - 10 - Utazható országbérlettel  
-Venice Simplon - 15 - 45   
+Venice Simplon - 15 - 45 - Nem Utazható országbérlettel   
 Frecciarossa - 18 - 20 - Utazható országbérlettel  
 Gatimaan Express - 20 - 55 - Utazható országbérlettel  

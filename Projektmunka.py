@@ -12,44 +12,44 @@ def feladat_eldontes(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
                 else:    
                     print("Nem jó adatokat adtál meg légyszi újra írd be :3")
                     feladat_eldontes(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
-        if feladat == "Iras" or "iras":
-                if melyik_fajl == "Be1.txt":
-                        iras_fajl_1(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
-                elif melyik_fajl == "Be2.txt":
-                    iras_fajl_2(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
-                else:
-                    print("Nem jó adatokat adtál meg légyszi újra írd be :3")
-                    feladat_eldontes(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)        
+        # if feladat == "Iras" or "iras":
+        #         if melyik_fajl == "Be1.txt":
+        #             iras_fajl_1(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
+        #         elif melyik_fajl == "Be2.txt":
+        #             iras_fajl_2(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
+        #         else:
+        #             print("Nem jó adatokat adtál meg légyszi újra írd be :3")
+        #             feladat_eldontes(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)        
     
         
 
-def iras_fajl_1(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
-    Menetrend_iro = open("Be1.txt", "a", encoding="UTF-8")
-    hozza_adott_sor = input("Mit szertenél hozzá írni (szabályokat tarts meg): ")
-    Menetrend_iro.write(f"\n{hozza_adott_sor}")
-    Menetrend_iro = open("Be1.txt", "r", encoding="UTF-8")
-    for sor in Menetrend_iro.readlines():
-        m = sor.split("-")
-        Vonat_nevek.append(m[0])
-        Indulasok_1.append(m[int(1)].strip("\n"))
-        Indulasok_2.append(m[int(2)].strip("\n"))
-        Orszag_berlet.append(m[int(3)-1].strip("\n"))
-    print(Vonat_nevek)
-    Menetrend_iro.close()
+# def iras_fajl_1(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
+#     Menetrend_iro = open("Be1.txt", "a", encoding="UTF-8")
+#     # hozza_adott_sor = input("Mit szertenél hozzá írni (szabályokat tarts meg): ")
+#     Menetrend_iro.write(f"\n{hozza_adott_sor}")
+#     Menetrend_iro = open("Be1.txt", "r", encoding="UTF-8")
+#     for sor in Menetrend_iro.readlines():
+#         m = sor.split("-")
+#         Vonat_nevek.append(m[0])
+#         Indulasok_1.append(m[int(1)].strip("\n"))
+#         Indulasok_2.append(m[int(2)].strip("\n"))
+#         Orszag_berlet.append(m[int(3)-1].strip("\n"))
+#     print(Vonat_nevek)
+#     Menetrend_iro.close()
 
-def iras_fajl_2(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
-    Menetrend_iro = open("Be2.txt", "a", encoding="UTF-8")
-    hozza_adott_sor = input("Mit szertenél hozzá írni (szabályokat tarts meg): ")
-    Menetrend_iro.write(f"\n{hozza_adott_sor}")
-    Menetrend_iro = open("Be2.txt", "r", encoding="UTF-8")
-    for sor in Menetrend_iro.readlines():
-        m = sor.split("-")
-        Vonat_nevek.append(m[0])
-        Indulasok_1.append(m[int(1)].strip("\n"))
-        Indulasok_2.append(m[int(2)].strip("\n"))
-        Orszag_berlet.append(m[int(3)-1].strip("\n"))
-    print(Vonat_nevek)
-    Menetrend_iro.close()
+# def iras_fajl_2(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
+#     Menetrend_iro = open("Be2.txt", "a", encoding="UTF-8")
+#     hozza_adott_sor = input("Mit szertenél hozzá írni (szabályokat tarts meg): ")
+#     Menetrend_iro.write(f"\n{hozza_adott_sor}")
+#     Menetrend_iro = open("Be2.txt", "r", encoding="UTF-8")
+#     for sor in Menetrend_iro.readlines():
+#         m = sor.split("-")
+#         Vonat_nevek.append(m[0])
+#         Indulasok_1.append(m[int(1)].strip("\n"))
+#         Indulasok_2.append(m[int(2)].strip("\n"))
+#         Orszag_berlet.append(m[int(3)-1].strip("\n"))
+#     print(Vonat_nevek)
+#     Menetrend_iro.close()
 
 def befajl_1(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
     Menetrend_beolvaso = open("Be1.txt", "r", encoding="UTF-8")

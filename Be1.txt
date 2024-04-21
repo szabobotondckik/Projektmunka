@@ -1,60 +1,61 @@
-S50 - 3 - 03 - Utazható Országbérlettel
-S50 - 4 - 03 - Utazható Országbérlettel
-Z50 - 4 - 18 - Utazható Országbérlettel
-Cívis - 4 - 38 - Utazható Országbérlettel
-Z50 - 4 - 48 - Utazható Országbérlettel
-7029 - 5 - 02 - Nem Utazható országbérlettel
-G50 - 5 - 06 - Nem Utazható országbérlettel
-Z50 - 5 - 18 - Utazható Országbérlettel
-Cívis - 5 - 33 - Utazható Országbérlettel
-7039 - 5 - 36 - Nem Utazható országbérlettel
-7049 - 6 - 36 - Nem Utazható országbérlettel
-Z50 - 6 - 48 - Utazható Országbérlettel
-Napfény - 7 - 13 - Utazható Országbérlettel
-Napfény - 8 - 13 - Utazható Országbérlettel
-Cívis - 8 - 38 - Utazható Országbérlettel
-Nyírség Krastna - 8 - 43 - Nem Utazható országbérlettel
-Z50 - 8 - 48 - Utazható Országbérlettel
-Napfény - 9 - 13 - Utazható Országbérlettel
-Cívis - 9 - 38 - Utazható Országbérlettel
-Tokaj - 9 - 43 - Nem Utazható országbérlettel
-Z50 - 9 - 48 - Utazható Országbérlettel
-Napfény - 10 - 13 - Utazható Országbérlettel
-Cívis - 10 - 38 - Utazható Országbérlettel
-Tokaj - 10 - 43 - Nem Utazható országbérlettel
-Z50 - 10 - 48 - Utazható Országbérlettel
+Cívis - 16 - 38 - Utazható Országbérlettel
+Cívis - 17 - 38 - Utazható Országbérlettel
+Tokaj - 15 - 43 - Nem Utazható országbérlettel
+Cívis - 14 - 38 - Utazható Országbérlettel
+Cívis - 18 - 38 - Utazható Országbérlettel
 Napfény - 11 - 13 - Utazható Országbérlettel
-Cívis - 11 - 38 - Utazható Országbérlettel
+Napfény - 15 - 13 - Utazható Országbérlettel
+Z50 - 10 - 48 - Utazható Országbérlettel
 Tokaj - 11 - 43 - Nem Utazható országbérlettel
-Z50 - 11 - 48 - Utazható Országbérlettel
-Napfény - 12 - 13 - Utazható Országbérlettel
-Cívis - 12 - 38 - Utazható Országbérlettel
-Tokaj - 12 - 43 - Nem Utazható országbérlettel
+G50 - 5 - 06 - Nem Utazható országbérlettel
+Napfény - 7 - 13 - Utazható Országbérlettel
 Z50 - 12 - 48 - Utazható Országbérlettel
-Napfény - 13 - 13 - Utazható Országbérlettel
+Cívis - 15 - 38 - Utazható Országbérlettel
 Cívis - 13 - 38 - Utazható Országbérlettel
+7039 - 5 - 36 - Nem Utazható országbérlettel
+Tokaj - 19 - 43 - Nem Utazható országbérlettel
+Cívis - 4 - 38 - Utazható Országbérlettel
+7029 - 5 - 02 - Nem Utazható országbérlettel
 Tokaj - 13 - 43 - Nem Utazható országbérlettel
+Z50 - 4 - 18 - Utazható Országbérlettel
+Cívis - 12 - 38 - Utazható Országbérlettel
+Cívis - 9 - 38 - Utazható Országbérlettel
+Z50 - 8 - 48 - Utazható Országbérlettel
+Tokaj - 10 - 43 - Nem Utazható országbérlettel
+Napfény - 10 - 13 - Utazható Országbérlettel
+Tokaj - 16 - 43 - Nem Utazható országbérlettel
+Napfény - 12 - 13 - Utazható Országbérlettel
+Z50 - 15 - 48 - Utazható Országbérlettel
+Tokaj - 18 - 43 - Nem Utazható országbérlettel
+Nyírség Krastna - 8 - 43 - Nem Utazható országbérlettel
+Z50 - 4 - 48 - Utazható Országbérlettel
+Z50 - 6 - 48 - Utazható Országbérlettel
+Tokaj - 9 - 43 - Nem Utazható országbérlettel
+Z50 - 18 - 48 - Nem Utazható országbérlettel
+Napfény - 9 - 13 - Utazható Országbérlettel
+Tokaj - 17 - 43 - Nem Utazható országbérlettel
+Napfény - 18 - 13 - Utazható Országbérlettel
+Napfény - 19 - 13 - Utazható Országbérlettel
+Cívis - 5 - 33 - Utazható Országbérlettel
+7049 - 6 - 36 - Nem Utazható országbérlettel
+Z50 - 17 - 48 - Utazható Országbérlettel
+Cívis - 19 - 38 - Utazható Országbérlettel
+Napfény - 17 - 13 - Utazható Országbérlettel
+Tokaj - 12 - 43 - Nem Utazható országbérlettel
 Z50 - 13 - 48 - Utazható Országbérlettel
 Napfény - 14 - 13 - Utazható Országbérlettel
-Cívis - 14 - 38 - Utazható Országbérlettel
-Tokaj - 14 - 43 - Nem Utazható országbérlettel
-Z50 - 14 - 48 - Utazható Országbérlettel
-Napfény - 15 - 13 - Utazható Országbérlettel
-Cívis - 15 - 38 - Utazható Országbérlettel
-Tokaj - 15 - 43 - Nem Utazható országbérlettel
-Z50 - 15 - 48 - Utazható Országbérlettel
-Napfény - 16 - 13 - Utazható Országbérlettel
-Cívis - 16 - 38 - Utazható Országbérlettel
-Tokaj - 16 - 43 - Nem Utazható országbérlettel
 Z50 - 16 - 48 - Utazható Országbérlettel
-Napfény - 17 - 13 - Utazható Országbérlettel
-Cívis - 17 - 38 - Utazható Országbérlettel
-Tokaj - 17 - 43 - Nem Utazható országbérlettel
-Z50 - 17 - 48 - Utazható Országbérlettel
-Napfény - 18 - 13 - Utazható Országbérlettel
-Cívis - 18 - 38 - Utazható Országbérlettel
-Tokaj - 18 - 43 - Nem Utazható országbérlettel
-Z50 - 18 - 48 - Nem Utazható országbérlettel
-Napfény - 19 - 13 - Utazható Országbérlettel
-Cívis - 19 - 38 - Utazható Országbérlettel
-Tokaj - 19 - 43 - Nem Utazható országbérlettel
+Z50 - 11 - 48 - Utazható Országbérlettel
+Tokaj - 14 - 43 - Nem Utazható országbérlettel
+Napfény - 13 - 13 - Utazható Országbérlettel
+Napfény - 8 - 13 - Utazható Országbérlettel
+Cívis - 10 - 38 - Utazható Országbérlettel
+S50 - 3 - 03 - Utazható Országbérlettel
+Cívis - 11 - 38 - Utazható Országbérlettel
+Z50 - 9 - 48 - Utazható Országbérlettel
+Napfény - 16 - 13 - Utazható Országbérlettel
+Cívis - 8 - 38 - Utazható Országbérlettel
+Z50 - 19 - 48 - Utazható Országbérlettel
+S50 - 4 - 03 - Utazható Országbérlettel
+Z50 - 14 - 48 - Utazható Országbérlettel
+Z50 - 5 - 18 - Utazható Országbérlettel
