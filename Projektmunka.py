@@ -94,12 +94,15 @@ def befajl_2(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
 
 
 def listazas(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
+    db_1 = 0
+    db_2 = 0
     print("Hogy szertenéd hogy ki írassuk az adatokat?")
     print("1 Txt szerint 1 sorban 4 adat?")
     print("2 Vagy minden adatot külön lista szerűen?")
+    print("Ha nem szertenéd ki iratni az adatokat akkor nyomj egy enter")
     kiiras = input("")
     print("\n")
-    if kiiras == "1":
+    if kiiras == "2":
         print("Vonatok Nevei:")
         for i in range(len(Vonat_nevek)):
             print(Vonat_nevek[i], end=" ")
@@ -114,9 +117,14 @@ def listazas(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
         print("\n")
         print("Vonat országbérlet lehetőségei: ")
         for i in range(len(Orszag_berlet)):
-            print(f"{Orszag_berlet[i]}\n")
+            if Orszag_berlet[i] == " Utazható Országbérlettel":
+                db_1 += 1
+            else:
+                db_2 += 1
+        print(f"Utazható Országbérlettel: {db_1}db")
+        print(f"Nem Utazható országbérlettel: {db_2}db")
         print("\n")
-    elif kiiras == "2":
+    elif kiiras == "1":
         for i in range(len(Vonat_nevek)):
             print(Vonat_nevek[i] + Indulasok_1[i] + Indulasok_2[i] + Orszag_berlet[i])
             print("")
