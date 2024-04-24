@@ -24,4 +24,4 @@ Railjet - 10 - 35 - Utazható országbérlettel
 Shatabdi Express - 13 - 10 - Utazható országbérlettel  
 Venice Simplon - 15 - 45 - Nem Utazható országbérlettel   
 Frecciarossa - 18 - 20 - Utazható országbérlettel  
-Gatimaan Express - 20 - 55 - Utazható országbérlettel  
+Gatimaan Express - 20 - 55 - Utazható országbérlettel
