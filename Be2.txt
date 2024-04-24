@@ -1,25 +1,25 @@
-Thalys - 08 - 00 - Utazható országbérlettel
+Thalys - 8 - 00 - Utazható országbérlettel
 TGV - 10 - 15 - Utazható országbérlettel 
 Eurostar - 12 - 30  -  Nem Utazható országbérlettel 
 ICE - 14 - 45 - Utazható országbérlettel  
 Acela Express - 17 - 00 - Utazható országbérlettel  
 Shinkansen - 19 - 15 - Utazható országbérlettel  
 Orient Express - 21 - 30 - Nem Utazható országbérlettel   
-Thello - 06 - 45 - Nem Utazható országbérlettel   
-Railjet - 09 - 20 - Utazható országbérlettel  
+Thello - 6 - 45 - Nem Utazható országbérlettel   
+Railjet - 9 - 20 - Utazható országbérlettel  
 Shatabdi Express - 11 - 40 - Utazható országbérlettel  
 Venice Simplon - 14 - 00 - Nem Utazható országbérlettel   
 Frecciarossa - 16 - 25 - Utazható országbérlettel  
 Gatimaan Express - 18 - 50 - Utazható országbérlettel  
 Flying Scotsman - 21 - 15 - Nem Utazható országbérlettel   
-Thalys - 07 - 30 - Utazható országbérlettel  
+Thalys - 7 - 30 - Utazható országbérlettel  
 TGV - 10 - 45 - Utazható országbérlettel  
 Eurostar - 13 - 00 - Nem Utazható országbérlettel   
 ICE - 15 - 20 - Utazható országbérlettel  
 Acela Express - 17 - 45 - Utazható országbérlettel  
 Shinkansen - 20 - 10 - Utazható országbérlettel  
 Orient Express - 22 - 35 - Nem Utazható országbérlettel   
-Thello - 08 - 00 - Nem Utazható országbérlettel   
+Thello - 8 - 00 - Nem Utazható országbérlettel   
 Railjet - 10 - 35 - Utazható országbérlettel  
 Shatabdi Express - 13 - 10 - Utazható országbérlettel  
 Venice Simplon - 15 - 45 - Nem Utazható országbérlettel   

@@ -1,9 +1,10 @@
 from random import *
 import webbrowser
+import os
 
 
 def feladat_eldontes(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
-        feladat = input("Mi legyen a program feladata: ")
+        feladat = input("Mi legyen a program feladata (Iras, Olvasas): ")
         melyik_fajl = input("Melyik fájlt dolgozzuk fel: ")
         if feladat == "Olvasas" or  feladat == "olvasas":
                 if melyik_fajl == "Be1.txt":
@@ -32,56 +33,44 @@ def feladat_eldontes(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
         
 
 def iras_fajl_1(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
-    try:
-        hozza_adott_sor = input("Mit szertenél hozzá írni (szabályokat tarts meg): ")
-        Menetrend_iro = open("Be1.txt", "a", encoding="UTF-8") 
-        Menetrend_iro.write(f"\n{hozza_adott_sor}")
-        Menetrend_iro = open("Be1.txt", "r", encoding="UTF-8")
-        for sor in Menetrend_iro.readlines():
-            m = sor.split("-")
-            Vonat_nevek.append(m[0])
-            Indulasok_1.append(m[int(1)].strip("\n"))
-            Indulasok_2.append(m[int(2)].strip("\n"))
-            Orszag_berlet.append(m[(3)-1].strip("\n"))
-        print(Vonat_nevek)
-        Menetrend_iro.close()
-    except:
-            print("Légyszíves próbáld újra minta szerint")
+        hozza_adott_sor = input("Mit szertenél hozzá írni (szabályokat tarts meg és a stoppal visszatudzs ugrani a feladat kiválasztáshoz): ")
+        if "-" not in hozza_adott_sor :
+            print("Kérlek írd be újra")
             print("Minta: Z50 - 5 - 18 - Utazható Országbérlettel")
-            Menetrend_iro = open("Be1.txt", "r", encoding="UTF-8") 
-            for sor in Menetrend_iro.readlines():
-                if sor == 62:
-                    Menetrend_iro = open("Be1.txt", "w", encoding="UTF-8")  
-                    Menetrend_iro.writelines([" "])
-                    Menetrend_iro.close()
             iras_fajl_1(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
-    
-
-def iras_fajl_2(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
-    try:
-        hozza_adott_sor = input("Mit szertenél hozzá írni (szabályokat tarts meg): ")
-        Menetrend_iro = open("Be2.txt", "a", encoding="UTF-8") 
-        Menetrend_iro.write(f"\n{hozza_adott_sor}")
-        Menetrend_iro = open("Be2.txt", "r", encoding="UTF-8")
-        for sor in Menetrend_iro.readlines():
-            m = sor.split("-")
-            Vonat_nevek.append(m[0])
-            Indulasok_1.append(m[int(1)].strip("\n"))
-            Indulasok_2.append(m[int(2)].strip("\n"))
-            Orszag_berlet.append(m[(3)-1].strip("\n"))
-        print(Vonat_nevek)
-        Menetrend_iro.close()
-    except:
-            print("Légyszíves próbáld újra minta szerint")
-            print("Minta: Z50 - 5 - 18 - Utazható Országbérlettel")
-            Menetrend_iro = open("Be2.txt", "r", encoding="UTF-8") 
+        else:
+            Menetrend_iro = open("Be1.txt", "a", encoding="UTF-8") 
+            Menetrend_iro.write(f"\n{hozza_adott_sor}")
+            Menetrend_iro = open("Be1.txt", "r", encoding="UTF-8")
             for sor in Menetrend_iro.readlines():
-                if sor == 28:
-                    Menetrend_iro = open("Be2.txt", "w", encoding="UTF-8")  
-                    Menetrend_iro.writelines([" "])
-                    Menetrend_iro.close()
-            iras_fajl_2(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
+                m = sor.split("-")
+                Vonat_nevek.append(m[0])
+                Indulasok_1.append(m[int(1)].strip("\n"))
+                Indulasok_2.append(m[int(2)].strip("\n"))
+                Orszag_berlet.append(m[(3)-1].strip("\n"))
+            print(Vonat_nevek)
+            Menetrend_iro.close()
 
+                    
+def iras_fajl_2(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
+        hozza_adott_sor = input("Mit szertenél hozzá írni (szabályokat tarts meg és a stoppal visszatudzs ugrani a feladat kiválasztáshoz): ")
+        if "-" not in hozza_adott_sor :
+            print("Kérlek írd be újra")
+            print("Minta: Z50 - 5 - 18 - Utazható Országbérlettel")
+            iras_fajl_1(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
+        else:
+            Menetrend_iro = open("Be2.txt", "a", encoding="UTF-8") 
+            Menetrend_iro.write(f"\n{hozza_adott_sor}")
+            Menetrend_iro = open("Be2.txt", "r", encoding="UTF-8")
+            for sor in Menetrend_iro.readlines():
+                m = sor.split("-")
+                Vonat_nevek.append(m[0])
+                Indulasok_1.append(m[int(1)].strip("\n"))
+                Indulasok_2.append(m[int(2)].strip("\n"))
+                Orszag_berlet.append(m[(3)-1].strip("\n"))
+            print(Vonat_nevek)
+            Menetrend_iro.close()
+            
 def befajl_1(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
     Menetrend_beolvaso = open("Be1.txt", "r", encoding="UTF-8")
     for sor in Menetrend_beolvaso.readlines():
@@ -101,9 +90,6 @@ def befajl_2(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet):
         Indulasok_1.append(m[int(1)])
         Indulasok_2.append(m[int(2)])
         Orszag_berlet.append(m[(3)].strip("\n"))
-    # print(Vonat_nevek)
-    # print(Indulasok_2)
-    # print(Indulasok_1)
     Menetrend_beolvaso.close()
 
 
@@ -144,7 +130,7 @@ def Indulas_mero(Indulasok_1):
         if Indulasok_1[i] > Indulasok_1[maxi]:
             maxi = i
             maxi += 1
-    print(f"A leg későbbi indulás{Indulasok_1[i]}")
+    print(f"A leg későbbi indulás {Indulasok_1[i]}")
     
 def gyakorisag_mero(Vonat_nevek):
     Gyakorisag = {}
@@ -178,6 +164,7 @@ def kivalogatas(Orszag_berlet, Vonat_nevek, Utazhato):
         if Orszag_berlet[i] == " Utazható Országbérlettel":
             if Vonat_nevek[i] not in Utazhato: 
                 Utazhato.append(Vonat_nevek[i])
+    print("Orzságbérlettel utazható vonatok:", end=" ")
     for j in range(len(Utazhato)):
         print(Utazhato[j], end=" ")
     print("")
@@ -187,8 +174,7 @@ def kivalogatas(Orszag_berlet, Vonat_nevek, Utazhato):
 def kereses(Indulasok_1, Vonat_nevek, r):
     n = len(Vonat_nevek)
     i = 0
-    print(r)
-    while i < n and not (Indulasok_1[i] == r):
+    while i < n and not (int(Indulasok_1[i]) == r):
         i += 1
     if i < n:
         return Vonat_nevek[i]
@@ -196,13 +182,15 @@ def kereses(Indulasok_1, Vonat_nevek, r):
             
 def osszegzes(Indulasok_1, Indulasok_2):
     s = 0
-    for i in range(0, len(Indulasok_1)-1):
-        if Indulasok_1[i+1] == Indulasok_1[i] or Indulasok_1[i-1] == Indulasok_1[i] or Indulasok_1[i-1] == Indulasok_1[i+1]:
-            Ido = int(Indulasok_2[i]) + int(Indulasok_2[i-1])
-            s += Ido
+    m = 0
+    n = len(Indulasok_1)
+    for i in range(0, n-1):
+        if Indulasok_1[i] == Indulasok_1[i+1]:
+            m += 0
         else:
-            Ido = int(Indulasok_2[i])
-            s += Ido
+            m += 1
+    s = (m * 60) + (int(Indulasok_2[n-1]) - int(Indulasok_2[0])) 
+        
     return s
 
     
@@ -236,8 +224,8 @@ def main():
     print(f"A leggyakoribb vonat: {gyakorisag_mero(Vonat_nevek)}")
     rendez(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
     listazas(Vonat_nevek, Indulasok_1, Indulasok_2, Orszag_berlet)
-    print(osszegzes(Indulasok_1, Indulasok_2))
-    print(kereses(Indulasok_1, Vonat_nevek, r))
+    print(f"A legelső indulás és a legutolsó indulás közt eltelt idő: {osszegzes(Indulasok_1, Indulasok_2)}")
+    print(f"A keresett vonat: {kereses(Indulasok_1, Vonat_nevek, r)}")
 
 main()
 
